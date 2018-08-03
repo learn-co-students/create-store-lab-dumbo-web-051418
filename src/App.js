@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import UserInput from './components/UserInput';
 
+import { connect } from 'react-redux'
+
 export class App extends Component {
   render() {
     return (
@@ -11,4 +13,4 @@ export class App extends Component {
   }
 };
 
-export default App;
+export default connect()(App);
